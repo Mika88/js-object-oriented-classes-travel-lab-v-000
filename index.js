@@ -16,7 +16,7 @@ class Route {
   }
 
   blocksTravelled() {
-    let streetsTravelled = Math.abs(endingLocation.vertical - beginningLocation.vertical)
+    let streetsTravelled = Math.abs(this.endingLocation.vertical - this.beginningLocation.vertical)
 
     let eastWest = [
       '1st Avenue',
@@ -28,8 +28,8 @@ class Route {
       '5th Avenue'
     ];
 
-    let endPoint = eastWest.indexOf(endingLocation.horizontal) + 1
-    let startPoint = eastWest.indexOf(beginningLocation.horizontal) + 1
+    let endPoint = eastWest.indexOf(this.endingLocation.horizontal) + 1
+    let startPoint = eastWest.indexOf(this.beginningLocation.horizontal) + 1
 
     let avenuesTravelled = Math.abs(endPoint - startPoint)
 
