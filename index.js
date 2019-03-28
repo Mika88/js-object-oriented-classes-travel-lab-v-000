@@ -31,7 +31,7 @@ class Route {
     let endPoint = eastWest.indexOf(endingLocation.horizontal) + 1
     let startPoint = eastWest.indexOf(beginningLocation.horizontal) + 1
 
-    let avenuesTravelled = Math.abs
+    let avenuesTravelled = Math.abs(endPoint - startPoint)
      }
    });
   }
