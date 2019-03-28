@@ -40,7 +40,7 @@ class Route {
     if (argument === true) {
       blocksTravelled() /2;
     }
-  
+
     else if (argument === undefined) {
       blocksTravelled() /3;
     }
