@@ -14,4 +14,26 @@ class Route {
     this.beginningLocation = beginningLocation;
     this.endingLocation = endingLocation;
   }
+
+  blocksTravelled() {
+    let streetsTravelled = Math.abs(endingLocation.vertical - beginningLocation.vertical)
+
+    let eastWest = [
+      '1st Avenue',
+      '2nd Avenue',
+      '3rd Avenue',
+      'Lexington Avenue',
+      'Park',
+      'Madison Avenue',
+      '5th Avenue'
+    ];
+
+    let endPoint = eastWest.indexOf(endingLocation.horizontal) + 1
+    let startPoint = eastWest.indexOf(beginningLocation.horizontal) + 1
+
+    let avenuesTravelled = Math.abs
+     }
+   });
+  }
 }
+
