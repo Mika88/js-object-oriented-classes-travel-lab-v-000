@@ -38,11 +38,11 @@ class Route {
 
   estimatedTime(argument) {
     if (argument === true) {
-      this.blocksTravelled() /2;
+      return this.blocksTravelled() /2;
     }
 
     else if (argument === undefined) {
-      this.blocksTravelled() /3;
+      return this.blocksTravelled() /3;
     }
   }
 }
